@@ -13,7 +13,7 @@ export const Header = () => {
       {authRoute.includes(router.route) && (
         <StyledHeader>
           <img src="/images/research-gateway.svg" alt="headerlogo" />
-          <Menu theme="dark" mode="horizontal" role={null} />
+          {/* <Menu theme="dark" mode="horizontal" role={null} /> */}
         </StyledHeader>
       )}
 
