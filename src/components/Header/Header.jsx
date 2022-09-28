@@ -6,6 +6,8 @@ import { StyledHeader, StyledMenu } from "./elements";
 export const Header = () => {
   const router = useRouter();
   const authRoute = ["/sign-in"];
+
+  console.log("ROUTE: ", router.route);
   return (
     <>
       {authRoute.includes(router.route) && (
