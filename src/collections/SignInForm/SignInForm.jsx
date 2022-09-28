@@ -20,7 +20,7 @@ const SignInForm = () => {
   };
 
   useEffect(() => {
-    document.title = "My Page Title";
+    document.title = "Login Form";
   });
   return (
     <StyledFormContainer>
