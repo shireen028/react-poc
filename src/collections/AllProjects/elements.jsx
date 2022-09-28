@@ -1,5 +1,5 @@
-import { Select, Button } from 'antd';
-import styled from 'styled-components';
+import { Select, Button } from "antd";
+import styled from "styled-components";
 
 export const AllProjectsContainer = styled.div`
   background: #fff;
@@ -8,15 +8,16 @@ export const AllProjectsContainer = styled.div`
   width: 100%;
   padding: 40px;
 
-  a{
-    color: #3E6BFF;
+  a {
+    // color: #3E6BFF;
+    color: #0030cc;
 
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
 
-  .bottom-para{
+  .bottom-para {
     text-align: center;
     margin-top: 30px;
   }
@@ -31,12 +32,12 @@ export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
 
-  h1{
+  h1 {
     font-size: 24px;
     margin-bottom: 2px;
   }
 
-  span{
+  span {
     font-weight: bold;
   }
 `;
@@ -50,26 +51,26 @@ export const StyledSelect = styled(Select)`
   width: 200px !important;
   height: 50px !important;
 
-  &&.ant-select-selector{
+  &&.ant-select-selector {
     height: 50px;
   }
 
-  &&.ant-select:not(.ant-select-customize-input) .ant-select-selector{
-    border: 1px solid #06153E;
+  &&.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #06153e;
     height: 50px;
   }
-  
-  &&.ant-select-arrow{
-    color: #06153E !important;
+
+  &&.ant-select-arrow {
+    color: #06153e !important;
   }
-  
-  &&.ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder{
+
+  &&.ant-select-single .ant-select-selector .ant-select-selection-item,
+  .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
     line-height: 45px;
   }
-
 `;
 
 export const StyledButton = styled(Button)`
   height: 50px;
-  border: 1px solid #06153E;
+  border: 1px solid #06153e;
 `;
