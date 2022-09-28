@@ -16,7 +16,7 @@ const SignInForm = () => {
   const router = useRouter();
   const onFinish = (values) => {
     console.log("Success:", values);
-    router.replace("/my-projects");
+    router.push("/my-projects");
   };
 
   useEffect(() => {
