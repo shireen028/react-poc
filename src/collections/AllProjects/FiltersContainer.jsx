@@ -10,37 +10,26 @@ export const FiltersContainer = () => {
   return (
     <StyledFiltersContainer>
       <StyledSelect
+        // showSearch
         id="sort"
         name="sort"
         defaultValue="Sort By"
         aria-required="false"
         role="combobox"
-        aria-label="MainSelect"
+        aria-label="Sort by"
         onChange={handleChange}
       >
-        <Option value="paused" aria-label="SelectOption1" role="textbox">
-          <span aria-label="op1" role="textbox">
-            {" "}
-            Paused
-          </span>
+        <Option value="paused" aria-label={"paused"} role="option">
+          Paused
         </Option>
-        <Option value="active" aria-label="SelectOption2" role="textbox">
-          <span aria-label="op2" role="textbox">
-            {" "}
-            Active
-          </span>
+        <Option value="active" aria-label={"active"} role="option">
+          Active
         </Option>
-        <Option value="lowToHigh" aria-label="SelectOption3" role="textbox ">
-          <span aria-label="op3" role="textbox">
-            {" "}
-            Budget: Low to High
-          </span>
+        <Option value="lowToHigh" aria-label={"lowToHigh"} role="option">
+          Budget: Low to High
         </Option>
-        <Option value="HighToLow" aria-label="SelectOption4" role="textbox">
-          <span aria-label="op4" role="textbox">
-            {" "}
-            Budget: High to Low
-          </span>
+        <Option value="HighToLow" aria-label={"HighToLow"} role="option">
+          Budget: High to Low
         </Option>
       </StyledSelect>
       <StyledButton icon={<PlusOutlined />}>Add More</StyledButton>
