@@ -13,6 +13,7 @@ export default function MyProjects() {
         fullVertical={true}
         style={{
           display: "flex",
+          width: "100%",
           //  justifyContent: "center",
           //  alignItems: "center",
           // height: "calc(100vh - 95px)",
