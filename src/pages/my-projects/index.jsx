@@ -10,10 +10,10 @@ export default function MyProjects() {
       </Head>
       <PageHeader title="All Projects" />
       <Container
-        fullVertical={true}
+        // fullVertical={true}
         style={{
-          display: "flex",
-          width: "100%",
+          //  display: "flex",
+          //width: "100%",
           //  justifyContent: "center",
           //  alignItems: "center",
           // height: "calc(100vh - 95px)",
