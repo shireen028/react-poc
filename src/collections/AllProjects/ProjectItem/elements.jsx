@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ProjectItemContainer = styled.div`
   padding: 20px;
@@ -14,6 +14,9 @@ export const ProjectContainer = styled.div`
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    img {
+      width: 120px;
+    }
   }
 `;
 
@@ -61,5 +64,9 @@ export const ProjectStatus = styled.div`
 
   span {
     font-weight: bold;
+  }
+
+  @media screen and (max-width: 816px) {
+    text-align: left;
   }
 `;

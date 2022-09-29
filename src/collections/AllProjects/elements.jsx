@@ -9,7 +9,7 @@ export const AllProjectsContainer = styled.div`
   padding: 40px;
 
   a {
-    // color: #3E6BFF;
+    //color: #3E6BFF;
     color: #0030cc;
 
     &:hover {
@@ -26,6 +26,11 @@ export const AllProjectsContainer = styled.div`
 export const ProjectInfoBar = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ProjectInfo = styled.div`

@@ -1,4 +1,4 @@
-import { Button, Select } from "antd";
+import { Button, Form, Select } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 const { Option } = Select;
 import { StyledButton, StyledFiltersContainer, StyledSelect } from "./elements";
@@ -10,27 +10,18 @@ export const FiltersContainer = () => {
   return (
     <StyledFiltersContainer>
       <StyledSelect
-        // showSearch
-        id="sort"
-        name="sort"
+        // role='combobox'
+        // aria-hidden={true}
+        // aria-expanded={false}
         defaultValue="Sort By"
-        aria-required="false"
+        onChange={handleChange}
         role="combobox"
         aria-label="Sort by"
-        onChange={handleChange}
       >
-        <Option value="paused" aria-label={"paused"} role="option">
-          Paused
-        </Option>
-        <Option value="active" aria-label={"active"} role="option">
-          Active
-        </Option>
-        <Option value="lowToHigh" aria-label={"lowToHigh"} role="option">
-          Budget: Low to High
-        </Option>
-        <Option value="HighToLow" aria-label={"HighToLow"} role="option">
-          Budget: High to Low
-        </Option>
+        <Option value="paused">Paused</Option>
+        <Option value="active">Active</Option>
+        <Option value="lowToHigh">Budget: Low to High</Option>
+        <Option value="HighToLow">Budget: High to Low</Option>
       </StyledSelect>
       <StyledButton icon={<PlusOutlined />}>Add More</StyledButton>
     </StyledFiltersContainer>

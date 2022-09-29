@@ -1,5 +1,5 @@
-import { Input, Form } from "antd";
-import styled from "styled-components";
+import { Input, Form } from 'antd';
+import styled from 'styled-components';
 
 export const StyledFormContainer = styled.div`
   /* height: 414px; */
@@ -31,8 +31,7 @@ export const StyledInputPassword = styled(Input.Password)`
 `;
 
 export const StyledLink = styled.a`
-  // color: #3e6bff;
-  color: #0030cc;
+  color: #1a4fff;
   text-align: right;
   &:hover {
     text-decoration: underline;
@@ -48,11 +47,11 @@ export const StyledFormItem = styled(Form.Item)`
     font-size: 14px;
     font-family: SimSun, sans-serif;
     line-height: 1;
-    content: "*";
+    content: '*';
   }
 
   .ant-form-item-label
     > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
-    content: "";
+    content: '';
   }
 `;

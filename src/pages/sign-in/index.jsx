@@ -1,9 +1,13 @@
-import { StyledFormContainer } from '../../collections/SignInForm/elements';
+import Head from 'next/head';
 import SignInForm from '../../collections/SignInForm/SignInForm';
 import { Container } from '../../components/Container';
 
 const SignInPage = () => {
   return (
+    <>
+    <Head>
+      <title>Sign In - Research Gateway</title>
+    </Head>
     <Container
       fullVertical={true}
       style={{
@@ -16,6 +20,7 @@ const SignInPage = () => {
     >
       <SignInForm/>
     </Container>
+    </>
   );
 };
 

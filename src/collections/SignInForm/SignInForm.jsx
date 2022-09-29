@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Form, Image, Input } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 import Icon from "@ant-design/icons";
@@ -18,15 +17,11 @@ const SignInForm = () => {
     console.log("Success:", values);
     router.push("/my-projects");
   };
-
-  useEffect(() => {
-    document.title = "Login Form";
-  });
   return (
     <StyledFormContainer>
       <h1 style={{ fontSize: "24px" }}>Sign In</h1>
       <img
-        alt=""
+        alt="colored-bars"
         src="/images/Colored-bars.svg"
         width={"100px"}
         style={{ marginTop: "-5px", marginBottom: "20px" }}
@@ -36,7 +31,6 @@ const SignInForm = () => {
           id="username"
           name="username"
           label="Enter Username"
-          autoFocus
           rules={[
             {
               required: true,
@@ -45,16 +39,21 @@ const SignInForm = () => {
           ]}
         >
           <StyledInput
+            //type='text'
+            // role='input'
+            // aria-label='usernames'
             placeholder="Username"
             prefix={
               <Icon
-                component={() => <img alt="username" src="/icons/user.svg" />}
+                component={() => <img src="/icons/user.svg" alt="user-icon" />}
               />
             }
           />
         </StyledFormItem>
         <StyledFormItem
           id="password"
+          type="password"
+          // aria-label='passwords'
           name="password"
           label="Enter Password"
           rules={[
@@ -62,11 +61,12 @@ const SignInForm = () => {
           ]}
         >
           <StyledInputPassword
+            // role='input'
             type="password"
             placeholder="Password"
             prefix={
               <Icon
-                component={() => <img alt="password" src="/icons/lock.svg" />}
+                component={() => <img src="/icons/lock.svg" alt="lock-icon" />}
               />
             }
             iconRender={(visible) =>
