@@ -3,6 +3,13 @@ import { DownOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { StyledHeader, StyledMenu } from "./elements";
+import {
+  EuroOutlined,
+  HeartOutlined,
+  BarsOutlined,
+  MenuOutlined,
+  CalculatorOutlined,
+} from "@ant-design/icons";
 
 export const Header = () => {
   const userMenu = (
@@ -42,6 +49,7 @@ export const Header = () => {
             defaultSelectedKeys={["1"]}
             theme="dark"
             mode="horizontal"
+            overflowedIndicator={<MenuOutlined />}
           >
             <Menu.Item key="0">
               <img
