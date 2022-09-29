@@ -49,7 +49,7 @@ export const Header = () => {
             defaultSelectedKeys={["1"]}
             theme="dark"
             mode="horizontal"
-            overflowedIndicator={<MenuOutlined />}
+            //overflowedIndicator={<MenuOutlined />}
           >
             <Menu.Item key="0">
               <img
